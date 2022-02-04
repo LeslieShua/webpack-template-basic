@@ -10,7 +10,7 @@ module.exports = {
   // 결과물(번들)을 반환하는 설정
   output: {
     // path: path.resolve(__dirname, 'dist'),
-    // filename: 'main.js',
+    //filename: 'main.js',
     clean: true
   },
 
@@ -29,7 +29,7 @@ module.exports = {
       {
         test: /\.js$/,
         use: [
-          'babel-loader'  // npm i -D babel-loader
+          'babel-loader'  //npm i -D babel-loader
         ]
       }
     ]
@@ -38,7 +38,7 @@ module.exports = {
   // 번들링 후 결과물의 처리 방식 등 다양한 플러그들을 설정
   plugins: [
     new HtmlPlugin({
-      template: './index.html' 
+      template: './index.html'
     }),
     new CopyPlugin({
       patterns: [
